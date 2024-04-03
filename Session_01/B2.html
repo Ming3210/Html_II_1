@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+      let classroom = [
+    {
+        id : 1,
+        number: 19
+    },
+    {
+        id : 2,
+        number: 36
+    },
+    {
+        id : 3,
+        number: 76
+    }
+   ]
+
+
+   let alterClass = classroom.map((item,index,arr)=>{
+    if(item.number <30) return item.number+=10
+    else if(item.number>40) return item.number-=10
+    else return item.number
+   })
+   console.log(alterClass);
+</script>
+</html>

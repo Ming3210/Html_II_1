@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = prompt("Nhập id sách tìm kiếm")
+     let book = [
+    {
+        id : 1,
+        name: "Harry Telepoter Vol .1"
+    },
+    {
+        id : 2,
+        name: "Harry Telepoter Vol .2"
+    },
+    {
+        id : 3,
+        name: "Harry Telepoter Vol .3"
+    }
+   ]
+    let search = book.find((item)=>{
+        return item.id == +a
+    })
+    console.log(search);
+    if (search.length== 0) console.log("Không có sách có id đã tìm");
+</script>
+</html>
