@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+   const users = [
+  {
+    name: "Nguyễn Văn A",
+    address: "Hà Nội",
+    email: "nva@rikkei.com",
+  },
+  {
+    name: "Trần Văn Bình",
+    address: "Hà Nội",
+    email: "tvbinh@rikkei.com",
+  },
+  {
+    name: "Nguyễn Hồng Anh",
+    address: "Thái Bình",
+    email: "nhanh@gmail.com",
+  },
+  {
+    name: "Lê Văn Nam",
+    address: "Hà Nội",
+    email: "lvnam@gmail.com",
+  },
+];
+
+function filterByAddressAndEmail(user,address, email){
+    let arr = user.filter((item)=>{
+        if(item.address == address){
+            return item
+        }
+    })
+    
+    
+    let arr2 = arr.filter((item)=>{
+        if("@"+item.email.split("@")[1] == email){
+            return item
+        }
+    })
+    console.log(arr2);
+}
+filterByAddressAndEmail(users,"Thái Bình","@gmail.com")
+</script>
+</html>
