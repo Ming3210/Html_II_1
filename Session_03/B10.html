@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr1 =[]
+  function sum(...arrs){
+      for (let arr of arrs) {
+          let sumary = 0;
+          for (let i=0; i<arr.length; i++) {
+              sumary += arr[i]
+            }
+            arr1.push(sumary)
+        }
+        console.log(arr1);
+  }
+    sum([1,2],[6,7,8],[12,8])
+</script>
+</html>

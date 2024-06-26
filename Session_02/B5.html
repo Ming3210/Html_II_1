@@ -25,16 +25,17 @@
   ]
 
   function increase(){
-    let result = employees.sort((a,b)=>{
+    let result = employees.slice().sort((a,b)=>{
         return a.age-b.age
     })
     console.log(result);
   }
   increase()
-
+  
+  
   function decrease(){
-    let result = employees.sort((a,b)=>{
-        return b.age-a.age
+    let result = employees.slice().sort((a,b)=>{
+      return b.age-a.age
     })
     console.log(result);
   }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+function group(...paras){
+    for (let i=0;i<paras.length;i++) {
+        for(let j=i+1; j<paras.length; j++){
+        if(paras[i].name == paras[j].name){
+            paras.splice(i, 1)
+            j--
+        }
+    }
+}
+console.log(paras);
+}
+let obj1 = {
+    name: "Minh",
+    age: 20
+}
+let obj2 = {
+    name: "Ming",
+    age: 21
+}
+let obj3 = {
+    name: "Abcxyz123",
+    age: 22
+}
+let obj4 = {
+    name: "Minh",
+    age: 30
+}
+group(obj1, obj2, obj3,obj4)
+</script>
+</html>

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "create": "^0.0.2",
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1",
+    "vite": "^5.3.1"
+  }
+}

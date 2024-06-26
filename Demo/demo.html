@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <main>
+        <div class="main">
+            <div class="sub-main">
+                <div>
+                    <h1>Student Management</h1>
+                </div>
+                <br>
+                <hr color="cyan">
+                <br>
+                <form class="input">
+                    <label for="">Name</label>
+                    <input id="name" type="text"><br>
+                    <label for="">Email</label>
+                    <input id="email" type="text"><br>
+                    <label for="">Phone</label>
+                    <input id="phone" type="text"><br>
+                    <label for="">Gender</label><br>
+                   <div>
+                    <input checked value="Male" name="gender" type="radio">Male
+                    <input value="Female" name="gender" type="radio">Female
+                    <input value="Other" name="gender" type="radio">Other
+                   </div>
+                   <br>
+                    <label for="">Address</label>
+                    <textarea id="address" name="" id="ta" cols="30" rows="10"></textarea>
+                    <button id="add" onclick="adding()" class="btn">Add</button>
+                </form>
+                <br>
+                <hr color="blueberry">
+                <br>
+                <div class="search">
+                    <input id="search" type="search">
+                    <span class="material-symbols-outlined">
+                        manage_search
+                        </span>
+                </div>
+                <br>
+                <div class="main-table">
+                    <table class="table" border="1">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Gender</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <tr>
+                                <td>Minh</td>
+                                <td>vminh@gmail.com</td>
+                                <td>0355129455</td>
+                                <td>Male</td>
+                                <td colspan="2">
+                                     <button class="table-btn">Edit</button>
+                                     <button class="table-btn">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hải</td>
+                                <td>vhai@gmail.com</td>
+                                <td>0355129455</td>
+                                <td>Male</td>
+                                <td colspan="2">
+                                     <button class="table-btn">Edit</button>
+                                     <button class="table-btn">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chính</td>
+                                <td>tchinh@gmail.com</td>
+                                <td>0355129455</td>
+                                <td>Male</td>
+                                <td colspan="2">
+                                     <button class="table-btn">Edit</button>
+                                     <button onclick="del()" class="table-btn">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="demo.js"></script>
+</body>
+</html>

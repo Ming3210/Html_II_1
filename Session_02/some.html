@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    some() : 1 vài
+    Dùng để duyệt các phần tử trong mảng
+    Nếu ít nhất 1 phân tử thỏa mãn điều kiện thì kết quả trả về là true
+    Nếu ko có phần tử nào thỏa mãn điều kiện thì kết quả là false
+    */
+   let numbers = [1, 2, 3, 4, 5]
+   let result = numbers.some((item,number,array)=>{
+    // console.log(item);
+    // console.log(number);
+    // console.log(array);
+    return item > 4;
+   })
+   console.log(result);
+</script>
+</html>

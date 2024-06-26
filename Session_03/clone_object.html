@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Chia lm 2 dạng clone
+        1. shalow clone : clone nông
+            + spread
+        2. deep clone : clone sâu ( clone hết)
+        Chuyển sang  định dang JSON
+    -->
+</body>
+<script>
+    let obj={
+        name: "Hung",
+        id:1,
+        address: {
+            city: "Hà Nội"
+        }
+    };
+    let newObj = JSON.parse(JSON.stringify(obj))
+    obj.name = "hoa"
+    // obj.address.city = "HCM"
+    console.log(newObj);
+</script>
+</html>

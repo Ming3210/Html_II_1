@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+       Các hàm nâng cao trong js
+       1. forEach()
+       2. map()
+       3. filter()
+       4. find()
+       5. findIndex()
+       // Sự khác nhau của arrow function và function bthg là như thế nào? ngoài cú pháp ngắn gọn
+       1. Không thể dùng hàm tạo constructor
+        Đồi với arrow function thì phải gọi sau khi khai báo
+        Cú pháp ngắm gọn hơn function bthg
+        Đối vs arrow function ko dùng đc arguments (sẽ lấy hết các đối số truyền vào)
+        Không thể dùng làm hàm tạo constructer
+        Bind( Ràng buộc ) this
+        Đối với function bthg thì khi đối tượng gọi phương thức thì this đại diện cho đối tượng ấy
+        Đối vs arrow function "this" đại diện cho đối tượng window 
+
+       2. Không thể dùng this 
+    -->
+</body>
+<script>
+    // function bình thường, declaration
+    // function sum(...a){
+    //     console.log(a);
+    // }
+    // console.log(sum(1,5,1,1,1));
+
+    // const sum2 = (a,b) => {
+    //     console.log();
+    // }
+
+    // const Student = (name, age) => {
+    //     this.name = name;
+    //     this.age = age;
+    // }
+
+    // let student1 = new Student("Hoa",25)
+    // console.log(student1);
+
+    let obj = {
+        name: "Hồng",
+        address : "Hà Nội",
+        getAddress : () =>{
+            console.log("Giá trị", this.address);
+        }
+    }
+
+    console.log("12123",obj.getAddress());
+    // const sum = (a,b) =>{
+    //     return a+b
+    // }
+    // console.log(sum(2,3));
+</script>
+</html>

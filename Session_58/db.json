@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": "hhhhhhhh",
+      "id": 1,
+      "address":"HCM",
+      "age":20
+    },
+    {
+      "name": "vbbbbbbb",
+      "address": "TH",
+      "id": 3,
+      "age":19
+    },
+    {
+      "name": "aaa",
+      "address": "HN",
+      "id": 4,
+      "age":26
+    },
+    {
+      "name": "gggggaa",
+      "address": "HN",
+      "id": 5,
+      "age":18
+    },
+    {
+      "name": "ccccccccccgggggaa",
+      "address": "HN",
+      "id": 6,
+      "age":29
+    }
+  ]
+}

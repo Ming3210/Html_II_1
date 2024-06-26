@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-main{
+    /* height: auto; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(95, 1, 43);
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.input input[type="text"]{
+   height: 20px     ;
+   width: 200px;
+}
+#ta{
+    width: 400px;
+    height: 100px;
+    resize: none;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#search{
+    width: 400px;
+    height: 40px;
+}
+.material-symbols-outlined {
+    position: relative;
+    right: 30px;
+    top:4px;
+    font-size: 31px !important;
+}
+.material-symbols-outlined:hover{
+    cursor: pointer;
+}
+.table{
+    border-collapse: collapse;
+    border: 1px solid rgb(255, 0, 187);
+}
+.main-table{
+    display: flex;
+    justify-content: center;
+}
+.table-btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(158, 234, 125);
+    color: rgb(0, 129, 129);
+    border: 0px;
+    border-radius: 8px;
+}
+.table-btn:hover{
+    cursor: pointer;
+}

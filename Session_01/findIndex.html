@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    Tìm kiếm vị trí phần tử thõa mãn
+    Nếu có trả về vị trí
+    Không có trả về -1
+    */
+      let users = [
+    {
+        id : 5,
+        name : `Dũng`
+    },
+    {
+        id : 6,
+        name : `Hoàng`
+    }
+   ]
+   let search = users.findIndex((item,index,arr)=>{
+    return item.id == 6
+   })
+   console.log(search);
+</script>
+</html>
